@@ -208,6 +208,9 @@ nav {
 .price-card .period { font-family:'Cinzel',serif; font-size:0.78rem; color:#888; margin-bottom:20px; }
 .price-card a.enroll { display:inline-block; background:linear-gradient(135deg,var(--gold),var(--gold-dark)); color:var(--blue); font-family:'Cinzel',serif; font-weight:700; font-size:0.88rem; padding:12px 32px; border-radius:40px; text-decoration:none; transition:transform 0.2s, box-shadow 0.2s; box-shadow:0 3px 14px rgba(245,197,24,0.3); }
 .price-card a.enroll:hover { transform:scale(1.05) translateY(-2px); box-shadow:0 8px 24px rgba(245,197,24,0.45); }
+.price-equiv { display:flex; flex-direction:column; gap:4px; margin-bottom:18px; }
+.price-equiv span { font-family:'Cinzel',serif; font-size:0.78rem; color:#666; letter-spacing:0.04em; }
+.price-equiv span strong { color:var(--blue); }
 
 .discount-box {
   max-width:660px; margin:28px auto 0; background:rgba(245,197,24,0.08);
@@ -451,7 +454,7 @@ footer a:hover { color:var(--gold); }
         <div class="doc-card reveal d4" style="text-align:center;cursor:pointer;" onclick="showPage(4)">
           <div style="font-size:2.4rem;margin-bottom:12px;">💰</div>
           <h3>Requirements &amp; Fees</h3>
-          <div style="font-family:'Cinzel',serif;font-size:0.72rem;color:var(--gold-dark);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">£25 · £35 · Discounts</div>
+          <div style="font-family:'Cinzel',serif;font-size:0.72rem;color:var(--gold-dark);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:10px;">£25/$32/₦50k · £35/$44/₦70k</div>
           <p style="font-size:0.88rem;color:#555;line-height:1.65;">What your child needs to join, program fees, multiple-children discounts, and how to register.</p>
           <div style="margin-top:16px;font-family:'Cinzel',serif;font-size:0.78rem;color:var(--crimson);letter-spacing:0.08em;">READ MORE →</div>
         </div>
@@ -719,8 +722,8 @@ footer a:hover { color:var(--gold); }
         <div class="doc-banner">Program Fees &amp; Discounts</div>
 
         <div style="margin:10px 0 28px;">
-          <p style="font-size:1.05rem;line-height:1.8;color:var(--text);margin-bottom:8px;"><strong>Two classes per week: £35</strong></p>
-          <p style="font-size:1.05rem;line-height:1.8;color:var(--text);"><strong>One class per week: £25</strong></p>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text);margin-bottom:4px;"><strong>Two classes per week: £35 / $44 / ₦70,000</strong></p>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text);"><strong>One class per week: £25 / $32 / ₦50,000</strong></p>
         </div>
 
         <div class="price-row">
@@ -728,6 +731,9 @@ footer a:hover { color:var(--gold); }
             <div class="plan">One Class / Week</div>
             <div class="amount"><span class="cur">£</span>25</div>
             <div class="period">per month</div>
+            <div class="price-equiv">
+              <span><strong>$32</strong> USD &nbsp;·&nbsp; <strong>₦50,000</strong> NGN</span>
+            </div>
             <a href="https://wa.me/380630404991" target="_blank" class="enroll">Enroll Now</a>
           </div>
           <div class="price-card featured reveal d2">
@@ -735,6 +741,9 @@ footer a:hover { color:var(--gold); }
             <div class="plan">Two Classes / Week</div>
             <div class="amount"><span class="cur">£</span>35</div>
             <div class="period">per month</div>
+            <div class="price-equiv">
+              <span><strong>$44</strong> USD &nbsp;·&nbsp; <strong>₦70,000</strong> NGN</span>
+            </div>
             <a href="https://wa.me/380630404991" target="_blank" class="enroll">Enroll Now</a>
           </div>
         </div>
