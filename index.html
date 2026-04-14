@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kingdom of Kings and Priests | Online Bible School</title>
+<link rel="icon" type="image/jpeg" href="icon.jpg">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,6 +27,7 @@ nav {
   display: flex; align-items: center; justify-content: space-between; height: 60px;
 }
 .nav-brand { font-family:'Cinzel',serif; font-size:0.9rem; font-weight:700; color:var(--gold); display:flex; align-items:center; gap:8px; text-decoration:none; flex-shrink:0; }
+.nav-logo { height:36px; width:36px; object-fit:contain; border-radius:6px; }
 
 /* desktop tabs */
 .nav-tabs { display:flex; gap:4px; }
@@ -354,7 +356,7 @@ footer a:hover { color:var(--gold); }
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a class="nav-brand" href="#" onclick="showPage(0);return false;">👑 <span>KKP Online Bible School</span></a>
+    <a class="nav-brand" href="#" onclick="showPage(0);return false;"><img src="icon.jpg" alt="KKP" class="nav-logo"> <span>KKP Online Bible School</span></a>
     <div class="nav-tabs">
       <button class="nav-tab active" onclick="showPage(0)">Home</button>
       <button class="nav-tab" onclick="showPage(1)">Overview</button>
