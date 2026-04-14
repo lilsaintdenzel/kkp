@@ -255,6 +255,22 @@ footer a { color:rgba(245,197,24,0.7); text-decoration:none; }
 footer a:hover { color:var(--gold); }
 .foot-sep { width:60px; height:2px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:12px auto; }
 
+/* download card */
+.download-card {
+  display:flex; align-items:center; gap:24px;
+  background:linear-gradient(135deg,#0f2d6b,#1e3a8a);
+  border:2px solid var(--gold); border-radius:16px; padding:28px 32px;
+  margin-top:32px; text-decoration:none;
+  transition:transform 0.22s, box-shadow 0.22s;
+  box-shadow:0 4px 22px rgba(0,0,0,0.2);
+}
+.download-card:hover { transform:translateY(-4px); box-shadow:0 12px 36px rgba(245,197,24,0.25); }
+.download-card .dc-icon { font-size:3rem; flex-shrink:0; filter:drop-shadow(0 0 10px rgba(245,197,24,0.5)); }
+.download-card .dc-text h4 { font-family:'Cinzel',serif; font-size:1rem; color:var(--gold); margin-bottom:4px; }
+.download-card .dc-text p { font-size:0.88rem; color:rgba(255,255,255,0.75); line-height:1.6; margin-bottom:10px; }
+.download-card .dc-btn { display:inline-block; background:linear-gradient(90deg,var(--gold),var(--gold-dark)); color:var(--blue); font-family:'Cinzel',serif; font-weight:700; font-size:0.75rem; letter-spacing:0.08em; padding:8px 22px; border-radius:30px; }
+@media(max-width:560px){ .download-card { flex-direction:column; text-align:center; } }
+
 /* hero stars */
 #stars { position:absolute; inset:0; pointer-events:none; }
 .star { position:absolute; border-radius:50%; background:var(--gold-light); animation:twinkle 3s ease-in-out infinite; opacity:0; }
@@ -447,6 +463,7 @@ footer a:hover { color:var(--gold); }
     <div class="cta-btns">
       <a href="https://wa.me/380630404991" target="_blank" class="btn-p reveal d2">💬 WhatsApp Us to Register</a>
       <a href="https://wa.me/380630404991" target="_blank" class="btn-s reveal d3">✉️ Send an Enquiry</a>
+      <a href="SAMPLE%20Discipleship%20Pack.pdf" download class="btn-s reveal d4">📄 Download Sample Pack</a>
     </div>
   </div>
 
@@ -615,6 +632,15 @@ footer a:hover { color:var(--gold); }
           <li><strong>Age-Appropriate Discipleship:</strong> Lessons match the child's understanding and ability to apply Godly principles.</li>
           <li><strong>Access to Resources:</strong> Curriculum guides, worksheets, and memory verse cards are available for all students.</li>
         </ul>
+
+        <a href="SAMPLE%20Discipleship%20Pack.pdf" download class="download-card reveal">
+          <div class="dc-icon">📄</div>
+          <div class="dc-text">
+            <h4>Sample Discipleship Pack</h4>
+            <p>Download a free sample of our curriculum resource to see how we equip children to grow in God's Word.</p>
+            <span class="dc-btn">⬇ Download PDF</span>
+          </div>
+        </a>
       </div>
 
       <div class="doc-section reveal" style="margin-top:36px;">
